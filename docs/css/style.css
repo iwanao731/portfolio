@@ -132,7 +132,7 @@ header .right h2{
     width: 767px;
     height: 150px;
     background-size: cover;
-    opacity: 0.8;
+    opacity: 1;
     transition: all 1s ease;
     cursor: pointer;
 }
