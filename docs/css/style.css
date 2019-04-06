@@ -29,7 +29,7 @@ a:hover, a:active{
   /* 767px 以下がここを反映 */
   header{
     width: 100%;
-    background-color: #0F0;
+    /* background-color: #0F0; */
   }
   header h1{
     text-aline: left;
@@ -163,7 +163,10 @@ header .right h2{
     background: url(../img/works/3dlivemaker.png) center center no-repeat;
 }
 #ANYFACE .works-bg{
-    background: url(../img/works/anyface.jpg) center center no-repeat;
+    background: url(../img/works/honor_v10.jpg) center center no-repeat;
+}
+#DIGITALDANCEGROUP .works-bg{
+    background: url(../img/works/digitaldancegroup.jpg) center center no-repeat;
 }
 
 /* publications ------------------------*/
