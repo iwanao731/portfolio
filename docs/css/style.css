@@ -1,0 +1,320 @@
+/* Reset --------------------- */
+
+/* Font ---------------------- */
+body{
+    width: 767px;
+    margin-right: auto;
+    margin-left : auto;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: normal;
+    color: #333;
+    font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    background-color: #f2f2f2;
+    /* margin: 30px 64px; */
+}
+
+/* Link ---------------------- */
+a:link, a:visited{
+    color:#999;
+    text-decoration: none;
+}
+a:hover, a:active{
+    color: #ccc;
+    text-decoration: none;
+}
+
+/* Responsive ---------------------- */
+@media (max-width: 767px) {
+  /* 767px 以下がここを反映 */
+  header{
+    width: 100%;
+    background-color: #0F0;
+  }
+  header h1{
+    text-aline: left;
+    font-size: 18px;
+  }
+  header .container{
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+  }
+  header .left{
+      background-color: #e6e6e6;
+  }
+  header .right{
+      padding: 0px 30px;
+      background-color: #e6e6e6;
+  }
+  header .right h2{
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+}
+
+/* header ---------------------------- */
+header{
+    width: 100%;
+    /* height: 640px; */
+    position: relative; /* 相対配置 親の基点 */
+}
+header h1{
+    margin-top: 15px;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    /* width: 130px;
+    height: 130px; */
+    /* background-color: #FFF; */
+    /* text-align: center; */
+    /* position: absolute; /* 絶対配置 子の座標指定 */ */
+    /* left: calc(50% - 65px); */
+    /* top: calc(50% - 65px); */
+}
+
+header img{
+    width: 450px;
+}
+header .container{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    margin-left: 20px;
+}
+
+header .left{
+    width: 450px;
+    /* padding: 10px 30px; */
+
+    /* padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+    /* width: 35%; */
+    /* background-color: #e6e6e6; */
+    /* margin-left: 20px; */
+}
+
+header .right{
+    width: 65%;
+    padding: 10px 30px;
+    /* background-color: #e6e6e6; */
+}
+
+header .right h2{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* works --------------------------------- */
+#works{
+    width: 100%;
+    padding-top: 0px;
+    /* text-align: center; */
+}
+#works h2{
+    padding: 20px 0px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.1rem;
+}
+#works section{
+    height: 150px;
+    flex-grow: 1; /* 比率 */
+    opacity: 1;
+    margin-bottom: 20px;
+}
+#works section .works-bg{
+    position: absolute;
+    margin-left: 20px;
+    width: 767px;
+    height: 150px;
+    background-size: cover;
+    opacity: 0.8;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+#works section .works-bg:hover{
+    opacity: 0.2;
+}
+#works h3{
+    /* background-color: #fff4f4; */
+    width: 767px;
+    height: 100px;
+    padding: 56px 0px;
+    margin-left: 20px;
+    font-size: 28px;
+    /* margin-bottom: 20px;
+    padding: 30px 50px; */
+    font-family: 'Montserrat', sans-serif;
+    opacity: 1;
+    text-align: center;
+    color: #FFF;
+    position: absolute;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+#LIVEMAKER{
+    animation-delay: 0.5s;
+}
+
+#LIVEMAKER .works-bg{
+    background: url(../img/works/3dlivemaker.png) center center no-repeat;
+}
+#ANYFACE .works-bg{
+    background: url(../img/works/anyface.jpg) center center no-repeat;
+}
+
+/* publications ------------------------*/
+#publications{
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+#publications h2{
+    font-size: 30px;
+    padding: 5px 0px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+#publications img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover; /* この一行を追加するだけ！ */
+}
+#publications .container{
+  margin: 20px 20px;
+  width: 100%;
+  display: flex;
+}
+
+#publications .left {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  width: 150px;
+  background-color: #e6e6e6;
+}
+
+#publications .right {
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    background-color: #e6e6e6;
+    text-align: left;
+}
+
+/* #publications .container{
+  margin: 20px auto;
+} */
+
+#publications .container h4{
+  font-size: 20px;
+}
+/* news ------------------------*/
+#news{
+    width: 100%;
+    padding: 80px 0;
+    text-align: center;
+    background-color: #e6e6e6;
+}
+#news h2{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.1rem;
+}
+#news .container{
+    width: 100%;
+    margin: 64px auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+#news article{
+    width: 100%;
+    height: 420px;
+    background-color: #FFF;
+    text-align: left;
+    margin-bottom: 32px;
+
+}
+#news article figure{
+    width: 100%;
+}
+#news article figure img{
+    width: 100%;
+}
+.news-data{
+    padding: 16px;
+    display: flex;
+}
+.news-data time{
+    font-size: 12px;
+    color: #666;
+    letter-spacing: 0.1rem;
+}
+.news-category{
+    width: 90px;
+    background-color: #A0A0A0;
+    color: #FFF;
+    font-size: 11px;
+    border-radius: 3px;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    margin-left: auto;
+}
+.news-category-seminar{
+    background-color: #17d8e6;
+}
+.news-category-media{
+    background-color: #e69a17;
+}
+#news h3{
+    padding: 16px;
+    font-size: 13px;
+}
+
+
+/* footer ----------------------------- */
+footer{
+    width: 100%;
+    padding: 80px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+footer h1 img{
+    width: 80px;
+    height: auto;
+}
+footer nav{
+    padding: 64px 0;
+    letter-spacing: 0.1rem;
+}
+.footer-nav-global{
+    width: 320px;
+    margin: 0 auto 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-nav-sns{
+    width: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer address{
+    color:#666;
+    font-size: 13px;
+    line-height: 2;
+    margin-bottom: 64px;
+}
+footer p small{
+    font-size: 11px;
+    color: #666;
+    letter-spacing: 0.1rem;
+}
