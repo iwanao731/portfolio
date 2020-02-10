@@ -16,8 +16,8 @@ body{
 
 /* Link ---------------------- */
 a:link, a:visited{
-    color:#999;
-    text-decoration: none;
+    color:#000;
+    text-decoration: underline
 }
 a:hover, a:active{
     color: #ccc;
